@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1, 2">
+    
+	    <TextView  
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content" 
+	        android:text="@string/MainTextViewWelcome"
+	    />
+	    
+	    <TextView  
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content" 
+	        android:text="@string/MainTextViewUsage"
+	    />
+    
+        <TableRow>
+            <TextView
+                android:text="@string/MainTextViewFirstBottle"
+                android:id="@+id/MainTextViewFirstBottle1"
+                android:layout_column="1"
+                android:gravity="center">
+            </TextView>
+            <TextView
+                android:text="@string/MainTextViewSecondBottle"
+                android:id="@+id/MainTextViewSecondBottle"
+                android:gravity="center">
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/MainTextViewQuantity"
+                android:id="@+id/MainTextViewQuantity"
+                android:gravity="center">
+            </TextView>
+            <EditText
+                android:id="@+id/MainEditQuantity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:numeric="decimal" android:singleLine="true" android:hint="0.7">
+            </EditText>
+            <EditText
+                android:id="@+id/MainEditQuantity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:numeric="decimal" android:singleLine="true" android:hint="0.7">
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/MainTextViewPer"
+                android:id="@+id/MainTextViewPer"
+                android:gravity="center">
+            </TextView>
+            <EditText
+                android:id="@+id/MainEditPer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:numeric="decimal" android:singleLine="true" android:hint="42">
+            </EditText>
+            <EditText
+                android:id="@+id/MainEditPer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:numeric="decimal" android:singleLine="true" android:hint="42">
+            </EditText>
+        </TableRow>
+        
+        <TableRow>
+            <TextView
+                android:text="@string/MainTextViewPrice"
+                android:id="@+id/MainTextViewPrice"
+                android:gravity="center">
+            </TextView>
+            <EditText
+                android:id="@+id/MainEditPrice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:numeric="decimal" android:singleLine="true" android:hint="7.98">
+            </EditText>
+            <EditText
+                android:id="@+id/MainEditPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:numeric="decimal" android:singleLine="true" android:hint="7.98">
+            </EditText>
+        </TableRow>
+        
+        <TableRow>
+            <Button
+			    android:id="@+id/MainButtonCalc"
+		        android:text="@string/MainButtonCalc"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		    />
+            <Button
+			    android:id="@+id/MainButtonDel1"
+		        android:text="@string/MainButtonDel1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		    />
+            <Button
+			    android:id="@+id/MainButtonDel2"
+		        android:text="@string/MainButtonDel2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		    />
+	    </TableRow>
+
+    </TableLayout>
+

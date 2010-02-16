@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="MainTextViewWelcome">This app will help you to choose which bottle is the right one to buy</string>
+    <string name="app_name">Alcohol price calculator</string>
+    <string name="MainTextViewUsage">For easier comparison you can enter two bottles at the same time</string>
+    <string name="MainTextViewFirstBottle">First bottle</string>
+    <string name="MainTextViewSecondBottle">Second bottle</string>
+    <string name="MainButtonCalc">Calculate</string>
+    <string name="MainButtonDel1">Clear</string>
+    <string name="MainButtonDel2">Clear</string>
+    <string name="MainTextViewQuantity">Quantity</string>
+    <string name="MainTextViewPer">Percentage</string>
+    <string name="MainTextViewPrice">Price</string>
+</resources>
