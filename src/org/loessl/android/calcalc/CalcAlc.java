@@ -14,6 +14,10 @@ public class CalcAlc extends Activity implements OnClickListener, View.OnKeyList
 	private Button calc, del1, del2;
 	private EditText quant1, quant2, per1, per2, price1, price2; 
 	private TextView solution1, solution2;
+	public static final int green = -16711936;
+	public static final int red = -65536;
+	
+	
 
 	/** Called when the activity is first created. */
 	@Override
@@ -38,26 +42,41 @@ public class CalcAlc extends Activity implements OnClickListener, View.OnKeyList
 
 		calc.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				Float tmp;
+				Float tmp1, tmp2;
+				tmp1 = 0.0F;
+				tmp2 = 0.0F;
 
 				if ( (quant1.length() > 0) && (price1.length() > 0) && (per1.length() > 0) ) {
-					tmp =
+					tmp1 =
 						Float.parseFloat(quant1.getText().toString()) *
 						Float.parseFloat(price1.getText().toString()) / 100 *
 						Float.parseFloat(per1.getText().toString());
-					solution1.setText(tmp.toString());
+					solution1.setText(tmp1.toString());
 				} else {
 					solution1.setText(R.string.MainTextViewError);
 				}
 
 				if ( (quant2.length() > 0) && (price2.length() > 0) && (per2.length() > 0) ) {
-					tmp =
+					tmp2 =
 						Float.parseFloat(quant2.getText().toString()) *
 						Float.parseFloat(price2.getText().toString()) / 100 *
 						Float.parseFloat(per2.getText().toString());
-					solution2.setText(tmp.toString());
+					solution2.setText(tmp2.toString());
 				} else {
 					solution2.setText(R.string.MainTextViewError);
+				}
+				if (tmp1 > tmp2){
+					solution1.setTextColor(green);
+					solution2.setTextColor(red);
+				
+				} else {
+					if (tmp1 == tmp2) {
+						solution1.setTextColor(green);
+						solution2.setTextColor(green);
+					} else {
+						solution1.setTextColor(red);
+						solution2.setTextColor(green);
+					}
 				}
 			}
 		});
