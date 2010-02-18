@@ -67,19 +67,20 @@ public class CalcAlc extends Activity implements OnClickListener, View.OnKeyList
 				} else {
 					solution2.setText(R.string.MainTextViewError);
 				}
+				
         //define colors of output
-				if (tmp1 > tmp2){
+				if (tmp1 > tmp2) {
 					solution1.setTextColor(green);
 					solution2.setTextColor(red);
-				
+				} else if ( tmp1 < tmp2) {
+					solution1.setTextColor(red);
+					solution2.setTextColor(green);
+				} else if (tmp1 == tmp2) {
+					solution1.setTextColor(green);
+					solution2.setTextColor(green);
 				} else {
-					if (tmp1 == tmp2) {
-						solution1.setTextColor(green);
-						solution2.setTextColor(green);
-					} else {
-						solution1.setTextColor(red);
-						solution2.setTextColor(green);
-					}
+					solution1.setTextColor(red);
+					solution2.setTextColor(red);
 				}
 			}
 		});
