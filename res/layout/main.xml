@@ -105,6 +105,23 @@
 		        android:layout_height="wrap_content"
 		    />
 	    </TableRow>
+	    
+        <TableRow>
+        	<TextView
+        		android:id="@+id/MainTextViewSolution1"  
+	        	android:layout_width="fill_parent" 
+	        	android:layout_height="wrap_content" 
+	        	android:text="@string/MainTextViewSolution1"
+	        	android:layout_column="1"
+	    	/>
+	    	<TextView  
+	    		android:id="@+id/MainTextViewSolution2"
+	        	android:layout_width="fill_parent" 
+	        	android:layout_height="wrap_content" 
+	        	android:text="@string/MainTextViewSolution2"
+	    	/>
+
+	    </TableRow>
 
     </TableLayout>
 

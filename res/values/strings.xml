@@ -11,4 +11,7 @@
     <string name="MainTextViewQuantity">Quantity</string>
     <string name="MainTextViewPer">Percentage</string>
     <string name="MainTextViewPrice">Price</string>
+    <string name="MainTextViewSolution1">Solution One</string>
+    <string name="MainTextViewSolution2">Solution Two</string>
+    <string name="MainTextViewError">Error</string>
 </resources>
