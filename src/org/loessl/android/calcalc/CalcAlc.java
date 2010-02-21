@@ -46,7 +46,7 @@ public class CalcAlc extends Activity implements OnClickListener, View.OnKeyList
 				tmp1 = 0.0F;
 				tmp2 = 0.0F;
         
-        //calculate 1. price
+				//calculate 1. price
 				if ( (quant1.length() > 0) && (price1.length() > 0) && (per1.length() > 0) ) {
 					tmp1 =
 						Float.parseFloat(quant1.getText().toString()) *
@@ -57,7 +57,7 @@ public class CalcAlc extends Activity implements OnClickListener, View.OnKeyList
 					solution1.setText(R.string.MainTextViewError);
 				}
         
-        //calculate 2. price
+				//calculate 2. price
 				if ( (quant2.length() > 0) && (price2.length() > 0) && (per2.length() > 0) ) {
 					tmp2 =
 						Float.parseFloat(quant2.getText().toString()) *
@@ -68,7 +68,7 @@ public class CalcAlc extends Activity implements OnClickListener, View.OnKeyList
 					solution2.setText(R.string.MainTextViewError);
 				}
 				
-        //define colors of output
+				//define colors of output
 				if (tmp1 > tmp2) {
 					solution1.setTextColor(green);
 					solution2.setTextColor(red);
