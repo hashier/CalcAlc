@@ -14,4 +14,7 @@
     <string name="MainTextViewSolution1">Solution One</string>
     <string name="MainTextViewSolution2">Solution Two</string>
     <string name="MainTextViewError">Error</string>
+    <string name="MainEditQuantity_Hint">0.7</string>
+    <string name="MainEditPer_Hint">42</string>
+    <string name="MainEditPrice_Hint">7.98</string>
 </resources>
