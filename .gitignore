@@ -1,2 +1,16 @@
-gen/org/loessl/android/calcalc/R.java
+.metadata
+tmp/**
+.DS_Store
+*.tmp
+*.bak
+tmp/**/*
+*.swp
+*~.nib
+Thumbs.db
+Desktop.ini
+*~
+*.apk
 bin
+gen
+local.properties
+*.jar
