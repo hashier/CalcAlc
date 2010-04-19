@@ -40,6 +40,7 @@ public class CalcAlc extends Activity implements OnClickListener, View.OnKeyList
 		solution1 = (TextView) findViewById(R.id.MainTextViewSolution1);
 		solution2 = (TextView) findViewById(R.id.MainTextViewSolution2);
 
+		/* Anonymous function */
 		calc.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				Float tmp1, tmp2;
@@ -85,6 +86,7 @@ public class CalcAlc extends Activity implements OnClickListener, View.OnKeyList
 			}
 		});
 		
+		/* with "normal" function, need implements */
 		del1.setOnClickListener(this);
 		del2.setOnClickListener(this);
 		
